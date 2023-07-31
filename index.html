@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+  <title> Your H5P Standalone Website Title </title>
+  <link type="text/css" rel="stylesheet" media="all" href="./Assets/styles/h5p.css" />
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="./Assets/main.bundle.js"></script>
+</head>
+
+<body>
+  <div id="h5p-container"></div>
+  <script type="text/javascript">
+    const {
+      H5P
+    } = H5PStandalone;
+    new H5P(document.getElementById('h5p-container'), {
+      h5pJsonPath: './gsu-stadium-vr',
+      frameJs: './Assets/frame.bundle.js',
+      frameCss: './Assets/styles/h5p.css'
+    });
+  </script>
+</body>
+
+</html>
